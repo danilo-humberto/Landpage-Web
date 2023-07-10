@@ -1,0 +1,445 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black; 
+    background-color: rgba(28, 27, 27, 0.829);
+    height: 4em;
+    color: white;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+span {
+    color: brown;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: brown;
+    margin: auto;
+    display: block;
+}
+
+li a:hover::after {
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+li a:hover {
+    color: rgb(224, 55, 55);
+}
+
+.barra-pesquisa {
+    background-color: white;
+    height: 15px;
+    border-radius: 40px;
+    padding: 10px;
+    
+}
+
+.texto-pesquisa {
+    border: none;
+    background-color: white;
+    outline: none;
+    margin-bottom: 5px;
+
+}
+
+/* PRIMEIRO CONTAINER */
+
+.primeiro-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(208, 204, 204);
+    height: 800px;
+    padding-top: 50px;
+}
+
+.primeiro-container-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.primeiro-container-escrito-titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 65px;
+    font-weight: 500;
+}
+
+.primeiro-titulo-cor {
+    color: brown;
+}
+
+.primeiro-container-escrito-subtitulo {
+    font-weight: 400;
+}
+
+.primeiro-container-escrito-botao {
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background-color: brown;
+    color: white;
+    box-shadow: 2px 3px 2px rgba(30, 27, 27, 0.726);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.primeiro-container-escrito-botao:hover {
+    background-color: transparent;
+    color: brown;
+    box-shadow: 0px 0px 15px brown;
+}
+
+.primeiro-container-escrito-botao:active {
+    transform: scale(1.1);
+}
+
+.primeiro-container-escrito-redes {
+    padding-top: 15px;
+}
+
+.redes-sociais {
+    padding-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais:hover {
+    transform: translateY(-15px);
+}
+
+.primeiro-container-imagem {
+    height: 450px;
+    width: 550px;
+}
+
+/* SEGUNDO CONTAINER */
+
+.segundo-container {
+    background-color: rgba(28, 27, 27, 0.829);
+    height: 700px;
+    text-align: center;
+    color: rgb(214, 211, 211);
+}
+
+.segundo-container-titulo {
+    font-family: 'Pacifico', cursive;
+    padding-top: 70px;
+    font-size: 60px;
+}
+
+.segundo-titulo-cor {
+    color: brown;
+}
+
+.segundo-container-subtitulo {
+    padding-top: 55px;
+}
+
+.segundo-container-imagens {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 60px;
+    flex-wrap: wrap;
+}
+
+.segundo-container-zoom-lol {
+    cursor: zoom-in;
+}
+
+.segundo-container-zoom-lol:hover .lol {
+    transform: scale(1.2);
+}
+
+.segundo-container-zoom-pubg {
+    cursor: zoom-in;
+}
+
+.segundo-container-zoom-pubg:hover .pubg {
+    transform: scale(1.2);
+}
+
+.segundo-container-zoom-among {
+    cursor: zoom-in;
+}
+
+.segundo-container-zoom-among:hover .among{
+    transform: scale(1.2);
+}
+
+.segundo-container-jogos {
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(227, 221, 221, 0.845);
+    transition: 0.5s;
+}
+
+.segundo-container-descricoes {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.segundo-container-descrioces-jogos {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.descricao-titulo {
+    font-size: 10px;
+}
+
+.pubg-descricoes-titulo {
+    padding-right: 30px;
+}
+
+.among-descricoes-titulo {
+    padding-right: 37px;
+}
+
+.descricao-lol {
+    padding-left: 94px;
+}
+
+.descricao-pubg {
+    padding-left: 15px;
+}
+
+.descricao-among {
+    padding-right: 58px;
+}
+
+/* TERCEIRO CONTAINER */
+
+.terceiro-container {
+    background-color: rgb(208, 204, 204);
+    text-align: center;
+    height: 650px;
+}
+
+.terceiro-container-titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    padding-top: 60px;
+}
+
+.terceiro-titulo-cor {
+    color: brown;
+}
+
+.terceiro-container-subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+}
+
+.terceiro-container-imagens {
+    display: flex;
+    padding-top: 60px;
+    justify-content: space-evenly;
+}
+
+.terceiro-container-zoom-vava {
+    cursor: zoom-in;
+}
+
+.terceiro-container-zoom-vava:hover .vava {
+    transform: scale(1.3);
+}
+
+.terceiro-container-zoom-csgo {
+    cursor: zoom-in;
+}
+
+.terceiro-container-zoom-csgo:hover .csgo {
+    transform: scale(1.3);
+}
+
+.terceiro-container-zoom-ff {
+    cursor: zoom-in;
+}
+
+.terceiro-container-zoom-ff:hover .ff {
+    transform: scale(1.3);
+}
+
+.terceiro-container-zoom-fortnite {
+    cursor: zoom-in;
+}
+
+.terceiro-container-zoom-fortnite:hover .fortnite {
+    transform: scale(1.3);
+}
+
+.terceiro-container-zoom-clash {
+    cursor: zoom-in;
+}
+
+.terceiro-container-zoom-clash:hover .clash {
+    transform: scale(1.3);
+}
+
+.terceiro-container-jogos {
+    border-radius: 10px;
+    box-shadow: 6px 6px 6px rgba(30, 28, 28, 0.783);
+    transition: 0.5s;
+}
+/* QUARTO CONTAINER */
+
+.quarto-container {
+    background-color: rgba(28, 27, 27, 0.829);
+    height: 600px;
+    text-align: center;
+    color: rgb(214, 211, 211);
+}
+
+.quarto-container-titulo {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    padding-top: 70px;
+}
+
+.quarto-titulo-cor {
+    color: brown;
+}
+
+.informacao-pessoal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.informacao-pessoal-caixa {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.name {
+    padding-right: 250px;
+}
+
+.caixa-nome {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-top: 10px;
+    box-shadow: 3px 4px 1px #ce3535d6;
+}
+
+.address {
+    padding-right: 230px;
+}
+
+.caixa-email {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 3px 4px 1px rgba(206, 53, 53, 0.838);
+}
+
+.informacao-pessoal-descricao-titulo {
+    padding-top: 30px;
+    padding-right: 523px;
+}
+
+.caixa-descricao {
+    width: 625px;
+    height: 130px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 3px 4px 1px rgba(206, 53, 53, 0.838);
+}
+
+.informacao-pessoal-enviar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.informacao-pessoal-botao {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: brown;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.838);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.informacao-pessoal-botao:hover {
+    background-color: brown;
+    color: white;
+    box-shadow: 0px 0px 15px rgb(208, 204, 204);
+}
+
+.informacao-pessoal-botao:active {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: rgb(208, 204, 204);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 900px;
+}
+
+.rodape-icones {
+    padding-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.rodape-icones:hover {
+    transform: translateY(-15px);
+}
